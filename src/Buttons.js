@@ -4,13 +4,13 @@ class Buttons extends Component {
     render(){
         return (
             <div className="buttonsContainer">
-                <button className="previous" onClick={this.props.decrease}>Previous</button>
+                <button className="forward-backward" onClick={this.props.decrease}>&lt; Previous</button>
                 <div>
-                    <button className="edit">Edit</button>
-                    <button className="delete">Delete</button>
-                    <button className="new">New</button>
+                    <button className="editors">Edit</button>
+                    <button className="editors">Delete</button>
+                    <button className="editors">New</button>
                 </div>
-                <button className="next" onClick={this.props.increase}>Next</button>
+                <button className="forward-backward" onClick={this.props.increase}>Next &gt;</button>
             </div>
         )
     }

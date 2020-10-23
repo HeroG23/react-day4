@@ -14,24 +14,24 @@ class App extends Component {
     }
   }
   inscreaseNum = ()=>{
-    if(this.state.userNumber <= 24){
+    if(this.state.userNumber === 24){
     this.setState({
-      userNumber:this.state.userNumber + 1
+      userNumber: 0
     })
   }else{
     this.setState({
-      userNumber: 0
+      userNumber:this.state.userNumber + 1
     })
   }}
 
   decreaseNum = ()=>{
-    if(this.state.userNumber>= 0){
+    if(this.state.userNumber=== 0){
     this.setState({
-      userNumber:this.state.userNumber -1
+      userNumber: 24
     })
   }else{
     this.setState({
-      userNumber: 24
+      userNumber:this.state.userNumber -1
     })
   }
 }

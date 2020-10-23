@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+header{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  align-items: center;
+  background-color: #34a5db;
+  height: 10vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header > h2{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+background-color: rgb(34,34,34);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content{
+  width: 90vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  margin: 0 auto;
+
+}
+.User-Info{
+  
+  margin: 0 auto;
+  background-color: #ebebeb;
+  width: 75%;
+}
+
+
+.user-id{
+  font-weight: bold;
+  font-size: 20px;
+  display: flex; 
+  justify-content: flex-end;
+}
+.user-name{
+  width: 200px;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  margin-left: 10%;
+  border-bottom: solid #34a5db;
+}
+
+.user-status{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+.favorite-movies{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.buttonsContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.forward-backward{
+  background-color: transparent;
+  border: none;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editors{
+  background-color: rgb(87, 163, 213);
+  border:none;
+  border-radius: 15px;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  margin: 0 px;
 }

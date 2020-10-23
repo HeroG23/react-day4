@@ -4,17 +4,16 @@ function UserInfo({user}){
 
     return(
         <div className="User-Info">
-            <div className = "user-name">
-                <p>{user.id}/25</p>
-                <h1>{user.name.first} {user.name.last}</h1>
-            </div>
+            
+                <div class="user-id">{user.id}/25</div>
+                <div class="user-name">{user.name.first} {user.name.last}</div>
             <div className="user-status">
-                <p>From: {user.city}, {user.country}</p>
-                <p>Job Title: {user.title}</p>
-                <p>Employer: {user.employer}</p>
+                <p><strong>From:</strong> {user.city}, {user.country}</p>
+                <p><strong>Job Title:</strong> {user.title}</p>
+                <p><strong>Employer:</strong> {user.employer}</p>
             </div>
-            <div className="favorite movies">
-                <p>Favorite movies:
+            <div className="favorite-movies">
+                <p><strong>Favorite movies:</strong>
                     <ol> 
                         <li>{user.favoriteMovies[0]}</li>
                         <li>{user.favoriteMovies[1]}</li>
